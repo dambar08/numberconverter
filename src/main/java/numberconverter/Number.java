@@ -56,8 +56,9 @@ public final class Number {
     return Words.values()[num.intValue()];
   }
 
+  //TODO
   public String getWords() {
-
+    return "";
   }
   
   public static void main(String[] args) {
