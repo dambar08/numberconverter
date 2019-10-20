@@ -1,25 +1,24 @@
 package numberconverter;
-import java.math.BigInteger;
 
 enum Words {
-    ZERO(new BigInteger("0")), ONE(new BigInteger("1")), TWO(new BigInteger("2")), THREE(new BigInteger("3")),
-    FOUR(new BigInteger("4")), FIVE(new BigInteger("5")), SIX(new BigInteger("6")), SEVEN(new BigInteger("7")),
-    EIGHT(new BigInteger("8")), NINE(new BigInteger("9")), TEN(new BigInteger("10")), ELEVEN(new BigInteger("11")),
-    TWELVE(new BigInteger("12")), THIRTEEN(new BigInteger("13")), FOURTEEN(new BigInteger("14")),
-    FIFTEEN(new BigInteger("15")), SIXTEEN(new BigInteger("16")), SEVENTEEN(new BigInteger("17")),
-    EIGHTEEN(new BigInteger("18")), NINETEEN(new BigInteger("19")), TWENTY(new BigInteger("20")),
-    THIRTY(new BigInteger("30")), FOURTY(new BigInteger("40")), FIFTY(new BigInteger("50")),
-    SIXTY(new BigInteger("60")), SEVENTY(new BigInteger("70")), EIGHTY(new BigInteger("80")),
-    NINETY(new BigInteger("90")), HUNDRED(new BigInteger("100")), THOUSAND(new BigInteger("1000")),
-    MILLION(new BigInteger("1000000")), BILLION(new BigInteger("1000000000"));
+    ZERO(0), ONE(1), TWO(2), THREE(3),
+    FOUR(4), FIVE(5), SIX(6), SEVEN(7),
+    EIGHT(8), NINE(9), TEN(10), ELEVEN(11),
+    TWELVE(12), THIRTEEN(13), FOURTEEN(14),
+    FIFTEEN(15), SIXTEEN(16), SEVENTEEN(17),
+    EIGHTEEN(18), NINETEEN(19), TWENTY(20),
+    THIRTY(30), FOURTY(40), FIFTY(50),
+    SIXTY(60), SEVENTY(70), EIGHTY(80),
+    NINETY(90), HUNDRED(100), THOUSAND(1000),
+    MILLION(1000000), BILLION(1000000000);
 
-    private final BigInteger number;
+    private final Long number;
 
-    private Words(BigInteger number) {
+    private Words(long number) {
         this.number = number;
     }
 
-    public BigInteger getNumber() {
+    public Long getNumber() {
         return this.number;
     }
 }
